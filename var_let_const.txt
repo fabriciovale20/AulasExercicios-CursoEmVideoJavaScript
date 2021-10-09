@@ -1,0 +1,5 @@
+                    var     let     const       
+global scope        YES     NO      NO
+function scope      YES     YES     YES
+block scope         NO      YES     YES
+can be reassigned   YES     YES     NO
