@@ -1,0 +1,33 @@
+------- AULA 07 -------
+
+** OPERADORES **
+1. Aritmétricos
+2. Atribuição
+3. Relacionais
+4. Lógicos
+5. Ternário
+
+*** 1. Aritmétricos ***
+5 + 2 = 7   Soma
+5 - 2 = 3   Subtração
+5 * 2 = 10  Multiplicação
+5 / 2 = 2.5 Divisão
+5 % 2 = 1   Resto
+5 ** 2 = 25 Potência
+
+*** 2. Atribuição ***
+var n = 3   
+                 Simplificado
+n = n + 4           n += 4
+n = n - 5           n -= 5
+n = n * 4           n *= 4
+n = n / 2           n /= 2
+n = n ** 2          n **= 2
+n = n % 5           n %= 5
+
+Normal
+    n = n + 1
+Simplificado
+    n += 1
+Incremento
+    n ++

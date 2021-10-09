@@ -1,0 +1,46 @@
+------- AULA 06 -------
+
+** COMENTÁRIOS **
+CSS → /* comentário */
+HTML → <!-- comentário -->
+JavaScript → // comentar uma linha
+JavaScript → /* cometar vários linhas */
+
+** TIPOS PRIMITIVOS **
+→ number
+    - Infinity
+    - NaN
+→ string
+→ boolean
+→ null
+→ undefined
+→ object
+    - Array
+→ function
+
+** CONVERSÕES **
+→ Converter para número:
+- Number.parseInt ou parseInt (Inteiros)
+- Number.parseFloat ou parseFloat (Reais)
+
+→ Converter para string:
+- Strin(n) ou n.toString()
+
+** FORMATANDO STRINGS **
+var s = 'JavaScript'
+→ 'Eu estou aprendendo' + s // Usa concatenação, utiliza ASPAS SIMPLES
+→ `Eu estou aprendendo ${s}` // Usa template string, utiliza CRASE
+→ s.length // Quantos caractesres a string
+→ s.toUpperCase() // Tudo para 'MAIÚSCULAS'
+→ s.toLowerCase() // Tudo para 'minúsculas'
+
+** FOMRTANDO NÚMEROS **
+var = 1543.5
+→ n1.toFixed(2).replace('.', ',') 
+    '1543,5'
+
+→ n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    'R$ 1.545,50'
+
+→ n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+    '€ 1.545,50'
