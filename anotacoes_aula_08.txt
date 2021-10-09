@@ -42,3 +42,11 @@ teste ? true : false
 
 Exemplo:
     média >= 7.0 ? "Aprovado" : "Reprovado"
+
+
+** ORDEM DE PRECEDÊNCIA **
+1º () ** / ...
+2º > < >= ...
+3º !
+4º &&
+5º ||

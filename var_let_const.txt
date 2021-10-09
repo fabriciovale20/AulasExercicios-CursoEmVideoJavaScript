@@ -3,3 +3,6 @@ global scope        YES     NO      NO
 function scope      YES     YES     YES
 block scope         NO      YES     YES
 can be reassigned   YES     YES     NO
+
+** HOSTING **
+É quando o código procura o valor da varável na parte de cima do código.

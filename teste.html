@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            background-color: rgb(43, 20, 20);
-            color: white;
-            font: normal 25pt Arial;
-        }
+        body { font: 12pt Arial; background-color: rgb(3, 29, 5); color: white; }
+        button { font-size: 12pt; padding: 30px; }
     </style>
 </head>
 <body>
+    <h1>Interagindo com um botão!</h1>
+    <button onclick="clicou()">Clica em mim!</button>
     <script>
-        nome = window.prompt('Seu nome:')
+        var cliques = 0
 
-        document.write(nome)
+        function clicou() {
+            cliques += 1
+        }
     </script>
 </body>
 </html>
