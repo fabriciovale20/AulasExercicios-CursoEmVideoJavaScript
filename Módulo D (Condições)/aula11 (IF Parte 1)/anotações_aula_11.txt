@@ -1,0 +1,15 @@
+------- AULA 11 -------
+
+** CONDIÇÕES **
+
+if (condição) {
+    true
+} else {
+    false
+}
+
+→ TIPOS DE CONDIÇÃO
+1. Condição Simples
+    if (condição) {
+        true
+    }

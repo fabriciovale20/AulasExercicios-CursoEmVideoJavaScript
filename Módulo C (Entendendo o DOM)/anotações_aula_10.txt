@@ -1,0 +1,7 @@
+------- AULA 09 -------
+
+** FUNÇÕES **
+
+function ação(parâmetros) {
+    código
+}

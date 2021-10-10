@@ -1,0 +1,39 @@
+------- AULA 09 -------
+
+** DOM **
+Document Object Model
+
+É um facilitador que existe dentro do navegador, dentro do HTML5 para dar acesso aos elementos diretamente para o JavaScript.
+Sem o DOM teríamos muita dificuldade em acessar os elementos da página.
+
+** ÁRVORE DOM **
+→ window
+    • location
+    • document
+        • html
+            • head
+                • meta
+                • title
+            • body
+                • h1
+                • p
+                • p
+                    • strong
+                • div
+    • history
+
+** SELECIONANDO **
+→ Marca
+    - getElementsByTagName()
+→ ID
+    - getElementById()
+→ Nome
+    - getElementsByName()
+→ Classe
+    - getElementsByClassName()
+→ Seletor
+    - querySelector()
+    - querySelectorAll()
+
+Para selecionar uma DIV é #
+Para selecionar um ID é .

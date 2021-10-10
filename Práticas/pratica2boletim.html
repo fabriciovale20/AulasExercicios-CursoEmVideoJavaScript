@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 2: Boletim Escolar</title> 
+    <!-- O programa recebe o nome e duas notas e calcular a média e informa se foi aprovado ou reprovado -->
+    <style>
+        body { 
+            background: rgb(11, 28, 7); 
+            color: white;
+            font: normal 25px Arial;
+            margin-top: 20px;
+        }
+        input {
+            margin-top: 30px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id='name'><h1>Boletim Escolar</h1></div>
+    Primeira nota:
+    <input type="number" name="txtn1" id="txtn1"><br>
+    Segunda nota:
+    <input type="number" name="txtn2" id="txtn2"><br>
+    <button onclick="media()">Calcular Média</button>
+    <div id='nota'></div>
+    <p></p>
+    <script>
+        var aluno = window.prompt('Nome completo')
+
+        /* Definindo Título com nome informado no Prompt */
+        var nome = window.document.getElementById('name')
+        nome.innerHTML = `Boletim Escolar de ${aluno}`
+
+        function media(){
+            /* Média do Aluno */
+            var n1 = window.document.querySelector('input#txtn1')
+            var n2 = window.document.querySelector('input#txtn2')
+            var n1 = Number(n1.value)
+            var n2 = Number(n2.value)
+
+            var media_aluno = (n1 + n2) / 2
+            // var situação = media_aluno >= 7.0 ? "Aprovado" : "Reprovado"
+
+            /* Impressão da Média do Aluno */
+            var res = window.document.getElementById('nota')
+            res.innerHTML = `Média: ${media_aluno} ${(media_aluno >= 7.0 ? "Aprovado" : "Reprovado")}`
+        }
+    </script>
+</body>
+</html>
