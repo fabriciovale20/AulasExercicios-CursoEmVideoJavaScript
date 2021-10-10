@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome e Idade</title>
+    <!-- Programa que recebe Nome e Idade e imprime na tela nome e idade informados e número de letras o nome tem -->
+    <style>
+        body {
+            background: rgb(9, 38, 20);
+            color: white;
+            font: normal 15pt Arial;
+            margin-left: 30px;
+        }
+        input#btt {
+            background: rgb(255, 255, 255);
+            color: rgb(21, 87, 209);
+            font: bold 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Informe seus dados</h1>
+    <p>Nome: <input type="text" name="nome" id="nome"></p>
+    <p>Idade: <input type="number" name="idade" id="idade"></p>
+    <p></p><input id='btt' type="button" value="Confirmar" onclick="confirmar()">
+    <div id='res'></div>
+    <div id='maior'></div>
+
+    <script>
+        function confirmar() {
+            /* Nome informado */
+            var nome = window.document.querySelector('input#nome').value
+            /* Idade informada */
+            var idade = Number(window.document.querySelector('input#idade').value)
+
+            var res = window.document.querySelector('div#res') // Capturando a div para imprimr o resultado final
+            var maior = window.document.querySelector('div#maior') // Capturando a div para imprimr o resultado final maior
+            res.style.font = maior.style.font = 'bold 15pt Arial' // Configurando apenas o texto final
+            
+            /* Validando se foram preenchidos os campos de NOME e IDADE */
+            if (nome == '' || idade == 0) {
+                res.innerHTML = `<p>Dados inválidos, tente novamente.</p>`
+            } else {
+                /* Saída */
+                res.innerHTML = `<p>Olá ${nome}, você tem ${idade} anos.</p>
+                <p>Seu nome tem ${nome.length} letras.</p>`
+
+                /* Verificando se já é de MAIOR */
+                if (idade >= 18) {
+                    maior.innerHTML = `<p>${nome} você já é de maior.</p>`
+                } else {
+                    maior.innerHTML = `<p>${nome} você ainda é de menor</p>`
+                }
+            }
+        }
+    </script>
+</body>
+</html>
