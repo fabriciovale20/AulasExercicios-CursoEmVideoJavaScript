@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calular IMC</title>
+    <style>
+        body {
+            background: black;
+            font: normal 10pt Arial;
+            color: white;
+        }
+        input {
+            width: 70px;
+        }
+        input#nome {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando IMC</h1>
+    <p>Nome: <input type="text" name="nome" id="nome"></p>
+    <p>Idade: <input type="number" name="txtidade" id="txtidade"></p>
+    <br>
+    <p>Peso (Kg): <input type="number" name="txtpeso" id="txtpeso"></p>
+    <p>Altura (cm): <input type="number" name="txtaltura" id="txtaltura"></p>
+    <input type="button" value="Calcular" onclick="imc()">
+    <div id='res'>Vamos calcular seu IMC</div>
+
+    <script>
+        function imc() {
+            var nome = window.document.querySelector('input#nome').value
+            var idade = Number(window.document.querySelector('input#txtidade').value)
+            var peso = Number(window.document.querySelector('input#txtpeso').value)
+            var altura = Number(window.document.querySelector('input#txtaltura').value)
+            var res = window.document.getElementById('res')
+
+            // var classificação = ''
+            var imc = peso / (altura/100)**2
+
+            res.innerHTML = `<p>Olá ${nome}!!!<br>
+                Você tem ${idade} anos.<br>
+                Os dados fornecidos foram:<br>
+                • Peso: ${peso} Kg<br>
+                • Altura: ${altura} cm<\p><br>
+                <strong>IMC = ${imc.toFixed(2)}</strong>`
+        }
+    </script>  
+</body>
+</html>

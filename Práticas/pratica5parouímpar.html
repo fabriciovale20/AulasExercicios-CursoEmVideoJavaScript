@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font: normal 15pt Arial;
+        }
+        input#butt {
+            background: rgb(88, 88, 88);
+            font: bold 10pt Arial;
+            color: white;
+        }
+        </style>
+</head>
+<body>
+    <h1><strong>PAR</strong> ou <strong>ÍMPAR</strong>?</h1>
+    <p>Número: <input type="number" name="txtn" id="txtn"></p>
+    <input id='butt' type="button" value="Consultar" onclick="numero()">
+    <div id='res'><p>O número...</p></div>
+
+    <script>
+        function numero() {
+            var numero = Number(window.document.querySelector('input#txtn').value)
+            var res = window.document.querySelector('div#res')
+
+            var classificação = ''
+
+            if (numero % 2 == 0) {
+                classificação = 'PAR'
+            } else {
+                classificação = 'ÍMPAR'
+            }
+
+            res.innerHTML = `<p>O número ${numero} é: <strong>${classificação}</strong></p>`
+        }
+    </script>
+</body>
+</html>
