@@ -1,6 +1,6 @@
 ------- AULA 11 -------
 
-** CONDIÇÕES **
+** CONDIÇÕES ANINHADAS **
 
 if (condição) {
     true
@@ -12,4 +12,11 @@ if (condição) {
 1. Condição Simples
     if (condição) {
         true
+    }
+
+2. Condição Composta
+    if (condição) {
+        true
+    } else {
+        false
     }

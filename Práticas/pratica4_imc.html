@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calular IMC</title>
+    <!-- Programa coleta Nome, Idade, Peso e Altura e calcula o IMC -->
     <style>
         body {
             background: black;
@@ -37,7 +38,6 @@
             var altura = Number(window.document.querySelector('input#txtaltura').value)
             var res = window.document.getElementById('res')
 
-            // var classificação = ''
             var imc = peso / (altura/100)**2
 
             res.innerHTML = `<p>Olá ${nome}!!!<br>
