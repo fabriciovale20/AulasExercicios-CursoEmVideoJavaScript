@@ -11,3 +11,29 @@ if (cond1) {
         bloco3
     }
 }
+
+ou
+
+if (cond1) {
+    bloco1
+} else if (cond2) {
+    bloco2
+} else {
+    bloco3
+}
+
+** CONDIÇÕES MÚLTIPLAS **
+
+switch (expressão) {
+    case valor 1:
+        break
+    case valor 2:
+        break
+    case valor 3:
+        break
+    default:
+        break
+}
+
+Obs.: Recomendado para utilizar apenas na situação de valores pontuais, por exemplo: 1, 3, 4, 6...
+Só funciona para números inteiros (1, 2, 3, 4) e caracteres ('Oi', 'Sim', 'Texto').

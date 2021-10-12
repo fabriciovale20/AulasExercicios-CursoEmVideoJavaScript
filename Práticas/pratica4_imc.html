@@ -18,6 +18,10 @@
         input#nome {
             width: 200px;
         }
+        input#btt {
+            background: rgba(0, 217, 255, 0.96);
+            font: bold 10pt Arial;
+        }
     </style>
 </head>
 <body>
@@ -27,8 +31,8 @@
     <br>
     <p>Peso (Kg): <input type="number" name="txtpeso" id="txtpeso"></p>
     <p>Altura (cm): <input type="number" name="txtaltura" id="txtaltura"></p>
-    <input type="button" value="Calcular" onclick="imc()">
-    <div id='res'>Vamos calcular seu IMC</div>
+    <input id='btt' type="button" value="Calcular" onclick="imc()">
+    <div id='res'><p>Vamos calcular seu IMC</p></div>
 
     <script>
         function imc() {
@@ -39,13 +43,24 @@
             var res = window.document.getElementById('res')
 
             var imc = peso / (altura/100)**2
+            var classificacao = ''
+            
+            if (imc < 18) {
+                classificacao = 'Magreza'
+            } else if (imc <= 24.9) {
+                classificacao = 'Normal'
+            } else if (imc <= 30) {
+                classificacao = 'Sobrepeso'
+            } else {
+                classificacao = 'Obesidade'
+            }
 
             res.innerHTML = `<p>Olá ${nome}!!!<br>
                 Você tem ${idade} anos.<br>
                 Os dados fornecidos foram:<br>
                 • Peso: ${peso} Kg<br>
                 • Altura: ${altura} cm<\p><br>
-                <strong>IMC = ${imc.toFixed(2)}</strong>`
+                <strong>IMC = ${imc.toFixed(2)} (${classificacao})</strong>`
         }
     </script>  
 </body>
