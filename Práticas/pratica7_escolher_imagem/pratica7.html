@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esolha a imagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Escolha a imagem</h1>
+    </header>
+    <section>
+        <div>
+            <p>Nome:
+                <input type="text" name="txtnome" id="txtnome">
+            </p>
+            <p id="frase">Qual brincadeira você quer praticar?</p><br>
+            <p>
+                <!--Natação-->
+                <input type="radio" name="radbri" id="natacao">
+                <img id="imagem" src="natacao.png" alt="Foto brincadeira"><br>
+                <!--Correr-->
+                <input type="radio" name="radbri" id="correr">
+                <img id="imamge" src="correr.png" alt="Foto brincadeira"><br>
+                <!--Amarelinha-->
+                <input type="radio" name="radbri" id="amarelinha">
+                <img id="imagem" src="amarelinha.png" alt="Foto brincadeira"><br>
+                <!--Esconde-esconde-->
+                <input type="radio" name="radbri" id="esconde">
+                <img id="imagem" src="esconde.png" alt="Foto brincadeira">
+            </p>
+            <p>
+                <input id="btt" type="button" value="Confirmar" onclick="confirmar()">
+            </p>
+        </div>
+        <div id='res'>
+            Preencha e receba o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Prática 7 (Escolha a imagem)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

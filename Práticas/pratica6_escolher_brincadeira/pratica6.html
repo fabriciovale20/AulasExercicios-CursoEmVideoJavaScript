@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha a brincadeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Escolha a brincadeira</h1>
+    </header>
+    <section>
+        <div>
+            <p>Nome: 
+                <input type="text" name="txtnome" id="txtnome">
+            </p>
+            <p>Escolha uma brincadeira: <br>
+                <!--Esconde-esconde-->
+                <input type="radio" name="radbri" id="brincadeira1" checked>
+                <label for="brincadeira1">Esconde-esconde</label>
+                <!--Amarelinha-->
+                <input type="radio" name="radbri" id="brincadeira2">
+                <label for="brincadeira2">Amarelinha</label><br>
+                <!--Correr-->
+                <input type="radio" name="radbri" id="brincadeira3">
+                <label for="brincadeira3">Correr</label>
+                <!--Natação-->
+                <input type="radio" name="radbri" id="brincadeira4">
+                <label for="brincadeira4">Natação</label>
+            </p>
+            <p>
+                <input type="button" value="Confirmar" onclick="confirmar()">
+            </p>
+        </div>
+        <div id='res'>
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Prática 6 (Escolha a brincadeira)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
