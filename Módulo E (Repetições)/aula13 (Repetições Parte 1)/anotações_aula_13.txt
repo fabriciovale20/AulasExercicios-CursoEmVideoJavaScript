@@ -1,0 +1,27 @@
+------- AULA 13 -------
+
+** REPETIÇÕES WHILE **
+
+while (condição) {
+    bloco1
+}
+
+Exemplo:
+function comerPizza() {
+    while (temFatia()) {
+        comerFatia()
+    }
+}
+
+OUTRO EXEMPLO
+
+var c = 1
+while (c <= 6) {
+    console.log(`Passo ${c}`)
+    c ++
+}
+
+** REPETIÇÕES DO WHILE **
+do {
+    bloco1
+} while (condição)

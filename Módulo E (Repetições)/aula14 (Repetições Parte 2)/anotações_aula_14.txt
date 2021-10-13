@@ -1,0 +1,22 @@
+------- AULA 14 -------
+
+** REPETIÇÕES FOR **
+
+for (início; teste; incr) {
+    bloco1
+}
+
+Exemplo:
+
+Utilizando WHILE:
+var c = 1
+
+while (c <= 10) {
+    bloco1
+    c ++
+}
+
+Utilizando FOR:
+for (var c = 1; c <= 10; c++) {
+    bloco1
+}
