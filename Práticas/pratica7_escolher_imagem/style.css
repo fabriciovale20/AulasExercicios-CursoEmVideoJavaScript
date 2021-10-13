@@ -30,6 +30,9 @@ section {
 
 input#btt {
     font: bold 10pt Arial;
+    background: rgb(42, 45, 207);
+    border-radius: 10px;
+    color: white;
 }
 
 footer {
