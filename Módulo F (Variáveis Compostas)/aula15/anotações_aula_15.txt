@@ -1,0 +1,15 @@
+------- AULA 15 -------
+
+** VARIÁVEIS COMPOSTAS **
+
+let num = [5, 8, 4]
+
+→ num[3] = 6 // Mesmo que não tenha a posição 3, irá adicionar o valor 6 na lista
+
+Ficará num = [5, 8, 4, 6]
+
+→ num.push(7) // Irá adicionar o valor 7 no final da lista
+
+→ num.length // Conta a quantidade de valores dentro da lista
+
+→ num.sort() // Organiza a lista em ordem crescente
