@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerto o número</title>
+    <title>Fatorial</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Acerte o número</h1>
+        <h1>Fatorial</h1>
     </header>
     <section>
-        <div><p>
-                <input type="number" name="txtn" id="txtn" placeholder="Digite um número inteiro">
-            </p>
-            <p>
-                <input id="btt" type="button" value="Verificar" onclick="verificar()">
+        <div>
+            <p>Número: 
+                <input type="number" name="numero" id="txtn">
+                <input type="button" value="Calcular" onclick="fatorial()">
             </p>
         </div>
         <div id='res'>
-            Você tem 3 tentativas.
+            Digite um número
         </div>
     </section>
     <footer>
-        <p>&copy;Prática 9 (Acerte o número)</p>
+        <p>&copy; Prática 10 (Fatorial)</p>
     </footer>
     <script src="script.js"></script>
 </body>

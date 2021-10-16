@@ -1,0 +1,26 @@
+------- AULA 16 -------
+
+** FUNÇÕES **
+
+→ São ações executadas assim que são chamadas ou em decorrência de algum evento.
+→ Uma função pode receber parâmetros e retornar um resultado.
+
+Exemplos:
+
+function ação(param) {
+    return res
+}
+
+ação(5) // Chamada da função
+
+----------------//----------------//----------------//----------------//----------------//----------------//----------------
+
+function parimpar(n) {
+    if (n % 2 == 0) {
+        return 'Par'
+    } else {
+        return 'Ímpar'
+    }
+}
+
+let res = parimpar(11) // Chamada da função
