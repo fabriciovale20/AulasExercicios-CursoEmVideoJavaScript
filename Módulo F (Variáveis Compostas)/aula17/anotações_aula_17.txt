@@ -1,0 +1,15 @@
+------- AULA 17 -------
+
+** POO (PROGRAMAÇÃO ORIENTADA A OBJETO) **
+
+→ ARRAY
+let num = [5, 8, 4]
+num
+[ 5 ] [ 8 ] [ 4 ]
+  0     1     2 
+
+→ OBJETO
+let amigo = {nome:'José', sexo:'M', peso:85.4, engordar(p)}
+
+[ José ] [ M ] [ 85.4 ] [ function ]
+  nome   sexo    peso     engordar
